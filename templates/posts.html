@@ -1,5 +1,10 @@
 <div>
-<h1>Hello!!!!!!!!!!!</h1>
+    <h1>Hello!!!!!!!!!!!</h1>
+    <a href="{% url 'make_post' %}">Make a Post</a>
+</div>
+
+
+<div>
     {% for post in object_list %}
 
         <p>{{post.title}}</p>
